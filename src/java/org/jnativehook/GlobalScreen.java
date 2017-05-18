@@ -383,6 +383,10 @@ public class GlobalScreen {
 		}
 	}
 
+	protected static void dispatchEvent(NativeInputEvent event) {
+		NativeHookThread.dispatchEvent(event);
+	}
+
 
 	/**
 	 * Enable the native hook. If the hooks is currently enabled, this function has no effect.
